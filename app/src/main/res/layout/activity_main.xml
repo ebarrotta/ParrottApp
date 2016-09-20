@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.studyjam.android.wtm.parrottapp.MainActivity">
+
+    <EditText
+        android:id="@+id/input_edit_text"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/repeat_button"
+        android:onClick="buttonOnClick"
+        android:text="PARROT REPEAT"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@id/input_edit_text" />
+
+    <Button
+        android:id="@+id/reset_button"
+        android:onClick="buttonReset"
+        android:text="RESET"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@id/repeat_button" />
+
+    <TextView
+        android:id="@+id/output_text_view"
+        android:text="Parrot says... "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignParentBottom="true" />
+
+    <ImageView
+        android:id="@+id/parrot_image_view"
+        android:src="@drawable/parrot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/reset_button" />
+</RelativeLayout>
